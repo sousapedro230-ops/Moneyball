@@ -121,7 +121,7 @@ pycountry — nationality/country code mapping
 
 📁 Repository Structure
 
-├── data/
+├── Moneyball-main/
 │   ├── players_data-2025_2026.csv
 │   └── players_with_values.csv
 ├── Moneyball_Melhorado.ipynb
