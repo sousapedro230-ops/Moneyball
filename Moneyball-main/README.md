@@ -129,10 +129,9 @@ pycountry — nationality/country code mapping
 
 🚀 How to Run
 
-bashgit clone [your-repo-link]
-cd moneyball-midfielders
-pip install pandas numpy matplotlib seaborn scikit-learn plotly ipywidgets pycountry
-jupyter notebook Moneyball_Melhorado.ipynb
+Create Codespaces.
+Inside do $pip install -r Requirements.txt
+Then add the python extention and you're good to go
 
 🔮 Next Steps
 
