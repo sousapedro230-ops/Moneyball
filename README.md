@@ -23,7 +23,11 @@ Cleaning & Preparation
 Removed duplicate player entries Filtered to players whose primary position is MF (Midfielder) Split the competition column into country code and league name; mapped country/nationality codes to full names (via pycountry, with manual exceptions for codes it doesn't cover, e.g. ENG, SCO, KVX) Dropped columns with excessive missing values Converted raw counting stats into per-90-minute rates (Gls/90, Ast/90, Fls/90, TklW/90) so players with different playing time are comparable
 
 Filtering Criteria
-FilterThresholdRationalePositionMF onlyFocus the analysis on a single position groupAge≤ 26Target players with development/resale upsideTotal minutes≥ 300Exclude small, unreliable samplesMinutes per 90≤ 30Exclude already-established startersMarket value≤ €50MExclude already-recognized elite players (e.g. Bellingham-tier valuations), which would distort the "undervalued" framingMarket value presentRequiredPlayers without a market value couldn't be scored and were dropped
+FilterThresholdRationalePositionMF onlyFocus the analysis on a single position group, Age ≤ 26, Target players with development/resale upside (Total minutes≥ 300). Exclude small, unreliable samples (Minutes per 90 ≤ 30).
+
+Exclude already-established starters (Market value ≤ €50M) Exclude already-recognized elite players (e.g. Bellingham-tier valuations), which would distort the "undervalued" framing Market value present.
+
+RequiredPlayers without a market value couldn't be scored and were dropped
 
 Performance Score
 Five per-90 features (Gls/90, Ast/90, Sh/90, Fls/90, TklW/90) were standardized with StandardScaler and averaged into a single Performance Score, after first checking a correlation matrix to validate the features weren't redundant.
